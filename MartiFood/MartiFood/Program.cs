@@ -1,7 +1,14 @@
+
+
+using MartiFood_API.Data.EF;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var connectionString = builder.Configuration.GetSection("ConnectionStrings").GetConnectionString("MartiFoodDb");
 
+builder.Services.AddDbContext<ApplicationDbContext>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MartiFood.Controllers
+namespace MartiFood_API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
