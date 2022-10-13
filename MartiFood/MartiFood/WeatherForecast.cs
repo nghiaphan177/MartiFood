@@ -1,4 +1,4 @@
-namespace MartiFood
+namespace MartiFood_API
 {
     public class WeatherForecast
     {
